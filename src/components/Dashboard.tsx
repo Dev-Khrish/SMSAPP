@@ -74,7 +74,7 @@ function Dashboard({ setIsAuthenticated }: DashboardProps) {
 
   const handleLogout = () => {
     localStorage.removeItem('token');
-    setIsAuthenticated(false);
+    setIsAuthenticated(true);
     history.push('/login');
   };
 
