@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <style>
+    text { font-family: Arial, sans-serif; font-size: 14px; }
+    .title { font-size: 20px; font-weight: bold; }
+    .component { fill: #f0f0f0; stroke: #333; stroke-width: 2; }
+    .arrow { stroke: #666; stroke-width: 2; marker-end: url(#arrowhead); }
+  </style>
+  
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+  
+  <text x="400" y="30" text-anchor="middle" class="title">SMS Management System Architecture</text>
+  
+  <!-- Frontend -->
+  <rect x="50" y="70" width="200" height="100" rx="10" class="component" />
+  <text x="150" y="120" text-anchor="middle">React Frontend</text>
+  
+  <!-- Backend -->
+  <rect x="300" y="70" width="200" height="100" rx="10" class="component" />
+  <text x="400" y="120" text-anchor="middle">Python Backend</text>
+  <text x="400" y="140" text-anchor="middle">(Flask/FastAPI)</text>
+  
+  <!-- Databases -->
+  <rect x="50" y="250" width="150" height="80" rx="10" class="component" />
+  <text x="125" y="290" text-anchor="middle">MongoDB</text>
+  
+  <rect x="250" y="250" width="150" height="80" rx="10" class="component" />
+  <text x="325" y="290" text-anchor="middle">MySQL</text>
+  
+  <!-- Monitoring -->
+  <rect x="450" y="250" width="150" height="80" rx="10" class="component" />
+  <text x="525" y="290" text-anchor="middle">Prometheus</text>
+  
+  <rect x="650" y="250" width="150" height="80" rx="10" class="component" />
+  <text x="725" y="290" text-anchor="middle">Grafana</text>
+  
+  <!-- SMS Programs -->
+  <rect x="50" y="400" width="700" height="100" rx="10" class="component" />
+  <text x="400" y="440" text-anchor="middle">SMS Programs (Screen Sessions)</text>
+  <text x="400" y="460" text-anchor="middle">program1_UZ_uzmobile, program2_US_att, ...</text>
+  
+  <!-- Connections -->
+  <line x1="150" y1="170" x2="400" y2="70" class="arrow" />
+  <line x1="400" y1="170" x2="125" y2="250" class="arrow" />
+  <line x1="400" y1="170" x2="325" y2="250" class="arrow" />
+  <line x1="400" y1="170" x2="525" y2="250" class="arrow" />
+  <line x1="525" y1="330" x2="725" y2="250" class="arrow" />
+  <line x1="400" y1="170" x2="400" y2="400" class="arrow" />
+</svg>

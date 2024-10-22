@@ -1,0 +1,6 @@
+fastapi==0.68.0
+uvicorn==0.15.0
+pyjwt==2.1.0
+motor==2.5.1
+aiomysql==0.0.21
+python-multipart==0.0.5
