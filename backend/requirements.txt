@@ -4,3 +4,4 @@ pyjwt==2.1.0
 motor==2.5.1
 aiomysql==0.0.21
 python-multipart==0.0.5
+fastapi-cors==0.0.6
